@@ -5,13 +5,13 @@ metadata:
 spec:
   destination:
     name: "default"
-    namespace: default
+    namespace: argocd
     server: "https://kubernetes.default.svc"
   source:
     path: argocd/getting-started
     repoURL: https://github.com/rajeshv-maplelabs/argocd_demo.git
     targetRevision: HEAD
-  project: default
+  project: argocd
   syncPolicy:
     automated:
       prune: true
